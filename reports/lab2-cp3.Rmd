@@ -39,9 +39,20 @@ alexTurner
 
 ```
 
+Energy: músicas enérgicas são mais "rápidas" e barulhentas, quanto maior o valor, mais enérgica.
+
+Valence: se a música é alegre ou triste, quanto maior o valor, mais alegre.
+
+Danceability: quanto maior o valor, mais "dançável" é a música.
+
+Instrumentalness: probabilidade da música conter ou não vocais, quanto maior o valor, menor a chance de haver conteúdo vocal.
+
+Speechiness: valores abaixo de 0,33 provavelmente representam músicas e outras faixas não relacionadas à fala (talk show, audio book).
+
+
 ##Pergunta 1:
 
-As músicas de ambas as bandas sempre me pareceram energéticas e animadas, isso é verdade?
+As músicas de ambas as bandas sempre me pareceram enérgicas e animadas, isso é verdade?
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -64,7 +75,7 @@ ggplotly(p, tooltip = c("label1", "label", "x", "y"))
 
 ```
 
-As músicas de ambas as bandas se concentram acima dos quadrantes 3 e 4 (acima de 0.5 em energia), o que diz que sim, elas são energéticas e o fato de haver uma concentração maior do lado direito indica que elas são mais alegres que tristes. No caso do Arctic Monkeys é mais fácil observar isso pois a maior parte das músicas estão concentradas acima de 0.75 para energia e 0.5 para valência. Já o The Last Shadow Puppets tem os dados mais espalhados.
+As músicas de ambas as bandas se concentram acima dos quadrantes 3 e 4 (acima de 0.5 em energia), o que diz que sim, elas são enérgicas e o fato de haver uma concentração maior do lado direito indica que elas são mais alegres que tristes. No caso do Arctic Monkeys é mais fácil observar isso pois a maior parte das músicas estão concentradas acima de 0.75 para energia e 0.5 para valência. Já o The Last Shadow Puppets tem os dados mais espalhados.
 
 ##Pergunta 2:
 
@@ -103,7 +114,7 @@ chartJSRadar(amPopular, maxScale = 1, scaleStepWidth = .2)
 
 ```
 
-As músicas mais famosas do Arctic Monkeys diferem bastante no quesito valência e um pouco menos em energia (variações maiores que 0.1), nas demais variáveis os valores são próximos (variações próximas de 0.1). A música mais diferente é a "Do I Wanna Know?" a menos energética e alegre (valência < 0.5) do grupo.
+As músicas mais famosas do Arctic Monkeys diferem bastante no quesito valência e um pouco menos em energia (variações maiores que 0.1), nas demais variáveis os valores são próximos (variações próximas de 0.1). A música mais diferente é a "Do I Wanna Know?" a menos enérgica e alegre (valência < 0.5) do grupo.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -122,7 +133,7 @@ chartJSRadar(sPopular, maxScale = 1, scaleStepWidth = .2)
 
 ```
 
-As faixas mais populares de The Last Shadow Puppets também se mostram diferentes, mas dessa vez em uma intensidade maior, as únicas categorias com valores próximos (variações menores que 0.1) são speechiness e instrumentalness. A música mais diferente é "Aviation", a mais energética do grupo.
+As faixas mais populares de The Last Shadow Puppets também se mostram diferentes, mas dessa vez em uma intensidade maior, as únicas categorias com valores próximos (variações menores que 0.1) são speechiness e instrumentalness. A música mais diferente é "Aviation", a mais enérgica do grupo.
 
 ##Pergunta 4:
 
